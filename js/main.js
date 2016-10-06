@@ -31,6 +31,7 @@ function addTitulo(){
 	var txt = document.createTextNode("Añadir una tarjeta..."); 
 	link.appendChild(txt);
 	span.parentElement.insertBefore(link, span.parentElement.childNodes[1]);
+	link.addEventListener("click", addTextArea);
 	link.addEventListener("click", function() {
 	    addTextArea(this);
 	});
@@ -48,4 +49,19 @@ function addTarjeta(){
 function addNewList(){
 	form.style.display="block";
 	span.style.display="none";
+}
+function addTextArea(link) { 
+    link.style.display = "none"; 
+    var form2 = document.createElement("form"); 
+    link.parentElement.appendChild(form2); 
+    var textArea = document.createElement("textarea"); 
+    form2.insertBefore(textArea, form2.childNodes[0]); 
+    textArea.classList.add("textarea"); 
+    var boton2 = document.createElement("button"); 
+    form2.insertBefore(boton2, form2.childNodes[1]); 
+    var botonName = document.createTextNode("Añadir"); 
+    boton2.appendChild(botonName); 
+    boton2.classList.add("boton2"); 
+    boton2.setAttribute("type", "submit");
+    textArea.focus();  
 }
