@@ -31,6 +31,21 @@ function addTitulo(){
 	var txt = document.createTextNode("Añadir una tarjeta..."); 
 	link.appendChild(txt);
 	span.parentElement.insertBefore(link, span.parentElement.childNodes[1]);
-	link.addEventListener("click", addTextArea);
+	link.addEventListener("click", function() {
+	    addTextArea(this);
+	});
 }
-
+function addTarjeta(){
+	var newTarjeta = document.createElement("div");
+	var contenedor = document.getElementById("contenedor");
+	contenedor.appendChild(newTarjeta);
+	newTarjeta.classList.add("newtarjeta");
+	newTarjeta.appendChild(span);
+    span.style.display = "block";
+    newTarjeta.insertBefore(form, newTarjeta.childNodes[0]);
+    newTarjeta.addEventListener("click",addNewList);
+}
+function addNewList(){
+	form.style.display="block";
+	span.style.display="none";
+}
