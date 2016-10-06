@@ -64,4 +64,14 @@ function addTextArea(link) {
     boton2.classList.add("boton2"); 
     boton2.setAttribute("type", "submit");
     textArea.focus();  
+	boton2.addEventListener("click", function(e){
+   		link.style.display="block";
+		e.preventDefault();
+		form2.classList.add("none");
+		var newTitulo = document.createElement("div");
+		newTitulo.innerText = textArea.value;
+		link.parentElement.appendChild(newTitulo);
+		link.parentElement.insertBefore(newTitulo, link.parentElement.childNodes[1]);
+		newTitulo.classList.add("newtitulo");
+	});    
 }
