@@ -227,6 +227,7 @@ function dejaArrastrar(e) {
 
 function arrastrarSobre(e) {
 	e.preventDefault();
+	this.classList.add("animated","flash");
 }
 
 function soltar(e) {
