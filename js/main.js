@@ -217,12 +217,15 @@ function nuevoTitulo(boton2){
 function empiezaArrastrar(e) {
 	e.dataTransfer.setData("text", this.id);
 	this.classList.add("arrastrar");
+	this.classList.add("animated","bounce");
 }
 
 function entraArrastrar(e) {
+	this.classList.add("animated","bounce");
 }
 
 function dejaArrastrar(e) {
+	this.classList.add("animated","bounce");
 }
 
 function arrastrarSobre(e) {
@@ -234,8 +237,10 @@ function soltar(e) {
 	var elementoArrastrado = document.getElementById(e.dataTransfer.getData("text"));
 	this.insertBefore(elementoArrastrado, this.children[1]);	
 	this.children[1].classList.remove("arrastrar");
+	this.classList.add("animated","bounce");
 }
 
 function terminaArrastrar(e) {
 	this.style.opacity = null;
+	this.classList.remove("animated","bounce");
 }
