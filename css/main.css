@@ -1,14 +1,14 @@
 .none{
-	display: none;
+  display: none;
 }
 .block{
-	display: block;
+  display: block;
 }
 .tarjeta{
-	background-color: orange;
-	color: white;
-	height: auto;
-	width: 240px;
+  background-color: orange;
+  color: white;
+  height: auto;
+  width: 240px;
     min-height: 30px;
     padding: 8px;
     border-radius: 4px;
@@ -18,41 +18,41 @@
     position: relative;
 }
 .boton1{
-	display: inline-block;
-	margin-top: 2px;
-	background-color: #045FB4;
+  display: inline-block;
+  margin-top: 2px;
+  background-color: #045FB4;
 }
 .entrada{
-	width: 98%;
+  width: 98%;
 }
 .newtarjeta{
-	display: inline-block;
-	margin-left: 10px;
+  display: inline-block;
+  margin-left: 10px;
     background-color: orange;
-	color: white;
-	height: auto;
-	width: 240px;
+  color: white;
+  height: auto;
+  width: 240px;
     min-height: 30px;
     padding: 8px;
     border-radius: 4px;
     cursor: pointer;
-	vertical-align: top;
+  vertical-align: top;
 }
 .contenedor{
-	position: absolute;
-	margin: 2%;
-	white-space: nowrap;
+  position: absolute;
+  margin: 2%;
+  white-space: nowrap;
 }
 .textarea{
-	border-radius: 5px;
-	width: 100%;
-	height: 60px;
-	margin-top: 8px;
-	padding: 0px;
-	color: #045FB4;
+  border-radius: 5px;
+  width: 100%;
+  height: 60px;
+  margin-top: 8px;
+  padding: 0px;
+  color: #045FB4;
 }
 .boton2 {
-	display: block;
+  display: block;
     width: 32%;
     height: 37px;
     padding: 0px;
@@ -62,10 +62,15 @@
     color: #FFF;
 }
 .newtitulo{
-	padding: 5px;
+  padding: 5px;
     background-color: #FFF;
     border-radius: 4px;
     margin-bottom: 8px;
     color: #045FB4;
     height: 30px;
+}
+.arrastrar{
+  background-color: #045FB4;
+  opacity: 0.5;
+
 }

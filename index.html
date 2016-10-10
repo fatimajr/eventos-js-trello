@@ -3,18 +3,21 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Eventos - Trello</title>
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
 	<div id="contenedor" class="contenedor">
-		<div id="tarjeta" class="tarjeta">
-			<form action="#" id="form">
-				<input id="entrada" type="text" placeholder="Añadir lista..." class="entrada form-control">
+		<div id="lista" class="lista tarjeta">
+			<div id="tarjeta">
+				<span id="span">Añadir una lista...</span>
+			</div>
+			<form action="#" id="form" class="none">
+				<input id="entrada" type="text" placeholder="Añadir una lista..." class="entrada form-control">
 				<button type="submit" id="boton1" class="boton1 btn">Guardar</button>
 				<span class="glyphicon glyphicon-remove" aria-hidden="true" id="icon"></span>
-			</form>
-			<span id="span">Añadir una lista...</span>
+			</form>			
 		</div>
 	</div>
 	<script type='text/javascript' src='js/main.js'></script>
