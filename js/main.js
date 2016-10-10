@@ -216,10 +216,10 @@ function nuevoTitulo(boton2){
 }
 function empiezaArrastrar(e) {
 	e.dataTransfer.setData("text", this.id);
+	this.classList.add("arrastrar");
 }
 
 function entraArrastrar(e) {
-	
 }
 
 function dejaArrastrar(e) {
@@ -231,7 +231,8 @@ function arrastrarSobre(e) {
 
 function soltar(e) {
 	var elementoArrastrado = document.getElementById(e.dataTransfer.getData("text"));
-	this.insertBefore(elementoArrastrado ,  this.children[1]);	
+	this.insertBefore(elementoArrastrado, this.children[1]);	
+	this.children[1].classList.remove("arrastrar");
 }
 
 function terminaArrastrar(e) {
