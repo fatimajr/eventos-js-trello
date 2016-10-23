@@ -8,16 +8,48 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
-	<div id="contenedor" class="contenedor">
-		<div id="lista" class="lista tarjeta">
-			<div id="tarjeta">
-				<span id="span">Añadir una lista...</span>
+	<div class="container-fluid header">
+		<div class="row">
+			<div class="col-xs-12 col-sm-5 col-md-5">
+				<button type="button" class="btn btn-default btn-trello">
+					<span><img src="img/trello.png" alt="trello"></span>
+					<span>Tableros</span>
+				</button>
+				<input type="text" placeholder="Search for..">
+				<span class="glyphicon glyphicon-search search-icon" aria-hidden="true"></span>
 			</div>
-			<form action="#" id="form" class="none">
-				<input id="entrada" type="text" placeholder="Añadir una lista..." class="entrada form-control">
-				<button type="submit" id="boton1" class="boton1 btn">Guardar</button>
-				<span class="glyphicon glyphicon-remove" aria-hidden="true" id="icon"></span>
-			</form>			
+			<div class="col-xs-12 col-sm-2 col-md-2 center">
+				<img src="img/trello-logo.png" alt="" class="t-logo">
+			</div>
+			<div class="col-xs-12 col-sm-5 col-md-offset-2 col-md-3 pd-l-8">
+				<span class="glyphicon glyphicon-plus icon" aria-hidden="true"></span>
+				<span class="glyphicon glyphicon-user icon" aria-hidden="true"><span>UserName</span></span>
+				<span class="glyphicon glyphicon-info-sign icon" aria-hidden="true"></span>
+				<span class="glyphicon glyphicon-bell icon" aria-hidden="true"></span>
+			</div>
+		</div>
+	</div>	
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12 tablero">
+				<span>TABLERO</span>
+				<span class="glyphicon glyphicon-star-empty pd-l-2" aria-hidden="true"></span>
+				<span class="glyphicon glyphicon-eye-close pd-l-2" aria-hidden="true"></span> 
+				<span>Privado</span>
+			</div>
+		</div>
+
+		<div id="contenedor" class="contenedor">
+			<div id="lista" class="lista tarjeta">
+				<div id="tarjeta">
+					<span id="span">Añadir una lista...</span>
+				</div>
+				<form action="#" id="form" class="none">
+					<input id="entrada" type="text" placeholder="Añadir una lista..." class="entrada form-control">
+					<button type="submit" id="boton1" class="boton1 btn">Guardar</button>
+					<span class="glyphicon glyphicon-remove" aria-hidden="true" id="icon"></span>
+				</form>			
+			</div>
 		</div>
 	</div>
 	<script type='text/javascript' src='js/main.js'></script>
